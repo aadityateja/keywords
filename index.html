@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101718">
+    <meta name="description" content="Build an evolving world, five words at a time.">
+    <title>KEYWORDS | An evolving world</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./keywords-engine.js"></script>
+    <script defer src="./narrative-state.js"></script>
+    <script defer src="./storage.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="./" aria-label="KEYWORDS home">
+          <span class="wordmark-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="wordmark-name">KEYWORDS</span>
+        </a>
+        <div class="topbar-meta">
+          <span class="edition">FIELD NOTES <span>NO. 01</span></span>
+          <button class="reset-button" id="reset-button" type="button" title="Start a new world">Reset session</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> A SMALL ENGINE FOR BIG WORLDS</p>
+            <h1 id="page-title">From five words<br><span>to an evolving world.</span></h1>
+          </div>
+          <p class="intro-note">Each turn leaves a trace. Ideas meet, patterns emerge, and the world remembers.</p>
+        </section>
+
+        <section class="workspace" aria-label="Story workspace">
+          <div class="story-column">
+            <form class="composer" id="keyword-form" novalidate>
+              <label class="composer-label" for="keyword-input">
+                <span>YOUR NEXT FIVE WORDS</span>
+                <span class="word-count" id="word-count" aria-live="polite">0 / 5</span>
+              </label>
+              <div class="input-row">
+                <input id="keyword-input" name="keywords" type="text" maxlength="140" autocomplete="off" placeholder="rain, scientist, midnight..." aria-describedby="form-message">
+                <button class="submit-button" id="submit-button" type="submit" disabled><span>Add words</span><span aria-hidden="true">↗</span></button>
+              </div>
+              <p class="form-message" id="form-message" role="status">Separate words with spaces or punctuation.</p>
+            </form>
+
+            <div class="stream-heading">
+              <h2>World stream</h2>
+              <span id="turn-count">0 TURNS</span>
+            </div>
+            <div class="story-stream" id="story-stream" aria-live="polite" aria-relevant="additions text"></div>
+          </div>
+
+          <aside class="inspector" aria-labelledby="inspector-title">
+            <div class="inspector-heading">
+              <div>
+                <p class="eyebrow">UNDER THE SURFACE</p>
+                <h2 id="inspector-title">System inspector</h2>
+              </div>
+              <span class="inspector-status" id="system-status" title="Engine status"><span></span> READY</span>
+            </div>
+
+            <section class="inspect-section" aria-labelledby="resolved-title">
+              <div class="inspect-label"><h3 id="resolved-title">Resolved concepts</h3><span id="resolved-count">0</span></div>
+              <div class="inspect-content" id="resolved-concepts"><p class="empty-state">Waiting for input</p></div>
+            </section>
+
+            <section class="inspect-section" aria-labelledby="rules-title">
+              <div class="inspect-label"><h3 id="rules-title">Activated rules</h3><span id="rules-count">0</span></div>
+              <div class="inspect-content rule-list" id="activated-rules"><p class="empty-state">No rules fired this turn</p></div>
+            </section>
+
+            <section class="inspect-section" aria-labelledby="unknown-title">
+              <div class="inspect-label"><h3 id="unknown-title">Unknown tokens</h3><span id="unknown-count">0</span></div>
+              <div class="inspect-content" id="unknown-tokens"><p class="empty-state">Nothing unknown</p></div>
+            </section>
+
+            <section class="inspect-section world-section" aria-labelledby="world-title">
+              <div class="inspect-label"><h3 id="world-title">World inventory</h3><span id="world-count">0</span></div>
+              <div class="inventory" id="world-inventory"><span class="empty-state">Your world is unwritten</span></div>
+            </section>
+
+            <footer class="inspector-footer"><span id="relationship-count">0 RELATIONSHIPS</span><span>LOCAL SESSION</span></footer>
+          </aside>
+        </section>
+      </main>
+      <footer class="page-footer"><span>KEYWORDS ENGINE <span id="engine-version">V1.0</span></span><span>YOUR WORLD STAYS IN THIS BROWSER</span></footer>
+    </div>
+  </body>
+</html>

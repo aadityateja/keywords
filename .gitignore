@@ -1,0 +1,14 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors and temporary files
+*.swp
+*.swo
+*.tmp
+.cache/
+.tmp/
+
+# Logs
+*.log

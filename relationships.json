@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "relationships": [
+    { "from": "rain", "type": "falls_from", "to": "cloud", "weight": 0.95 },
+    { "from": "storm", "type": "contains", "to": "lightning", "weight": 0.9 },
+    { "from": "storm", "type": "moves_with", "to": "wind", "weight": 0.8 },
+    { "from": "snow", "type": "forms_in", "to": "cloud", "weight": 0.9 },
+    { "from": "lightning", "type": "illuminates", "to": "shadow", "weight": 0.65 },
+    { "from": "scientist", "type": "studies", "to": "question", "weight": 0.9 },
+    { "from": "astronomer", "type": "observes_with", "to": "telescope", "weight": 0.95 },
+    { "from": "telescope", "type": "reveals", "to": "jupiter", "weight": 0.85 },
+    { "from": "moon", "type": "reflects", "to": "light", "weight": 0.9 },
+    { "from": "gravity", "type": "shapes", "to": "jupiter", "weight": 0.8 },
+    { "from": "gravity", "type": "binds", "to": "moon", "weight": 0.8 },
+    { "from": "clock", "type": "measures", "to": "time", "weight": 0.9 },
+    { "from": "midnight", "type": "marks", "to": "time", "weight": 0.95 },
+    { "from": "silence", "type": "deepens", "to": "question", "weight": 0.75 },
+    { "from": "memory", "type": "reaches_across", "to": "time", "weight": 0.85 },
+    { "from": "ocean", "type": "reflects", "to": "moon", "weight": 0.75 },
+    { "from": "mountain", "type": "rises_under", "to": "star", "weight": 0.6 },
+    { "from": "forest", "type": "holds", "to": "shadow", "weight": 0.7 },
+    { "from": "signal", "type": "travels_through", "to": "light", "weight": 0.6 },
+    { "from": "fire", "type": "casts", "to": "shadow", "weight": 0.85 },
+    { "from": "door", "type": "opens_to", "to": "question", "weight": 0.7 },
+    { "from": "earth", "type": "orbits", "to": "star", "weight": 0.98 }
+  ]
+}

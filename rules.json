@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    { "id": "midnight-observation", "title": "The midnight observation", "priority": 100, "conditions": { "all": ["midnight", "telescope"], "any": ["scientist", "astronomer"] }, "template": "At midnight, {attributes.character} turns the telescope toward the dark. The instrument gathers a patient light from beyond the world." },
+    { "id": "jupiter-storm", "title": "A storm on Jupiter", "priority": 95, "conditions": { "all": ["jupiter", "storm"] }, "template": "Across Jupiter, a storm wider than Earth turns without rest. {attributes.character} traces its edge and wonders what keeps it alive." },
+    { "id": "rain-telescope", "title": "Weather at the window", "priority": 90, "conditions": { "all": ["rain", "telescope"], "not": ["storm"] }, "template": "Rain threads the glass while the telescope waits indoors. Every drop briefly becomes a small, inverted sky." },
+    { "id": "moon-ocean", "title": "The reflected moon", "priority": 88, "conditions": { "all": ["moon", "ocean"] }, "template": "The moon lays a broken road across the ocean. {attributes.character} follows it with their eyes, not their feet." },
+    { "id": "lightning-shadow", "title": "A brief architecture", "priority": 86, "conditions": { "all": ["lightning", "shadow"] }, "template": "Lightning redraws every shadow in a single white instant, revealing a landscape that vanishes before it can be named." },
+    { "id": "gravity-jupiter", "title": "The weight of worlds", "priority": 84, "conditions": { "all": ["gravity", "jupiter"] }, "template": "Jupiter bends the paths around it. The equations say gravity; the night offers something closer to devotion." },
+    { "id": "scientist-question", "title": "A useful uncertainty", "priority": 82, "conditions": { "all": ["scientist", "question"] }, "template": "{attributes.character} writes the question in the margin and leaves the answer blank. Inquiry, for now, is enough." },
+    { "id": "clock-midnight", "title": "The hour turns", "priority": 80, "conditions": { "all": ["clock", "midnight"] }, "template": "The clock crosses midnight with a small mechanical click. Somewhere, a day ends without asking permission." },
+    { "id": "snow-mountain", "title": "A white summit", "priority": 78, "conditions": { "all": ["snow", "mountain"] }, "template": "Snow settles along the mountain's ridgeline, softening its oldest angles but not its height." },
+    { "id": "wind-forest", "title": "The forest listens", "priority": 76, "conditions": { "all": ["wind", "forest"] }, "template": "Wind moves through the forest canopy. The trees answer in a language older than weather reports." },
+    { "id": "silence-memory", "title": "What remains", "priority": 74, "conditions": { "all": ["silence", "memory"] }, "template": "In the silence, a memory returns without its edges. {attributes.character} lets it stay unfinished." },
+    { "id": "signal-light", "title": "A message in transit", "priority": 72, "conditions": { "all": ["signal", "light"] }, "template": "A signal crosses the distance at the speed of light. Its sender is gone; its arrival is now." },
+    { "id": "fire-rain", "title": "Opposing elements", "priority": 70, "conditions": { "all": ["fire", "rain"] }, "template": "Rain hisses against the fire. For one moment, making and unmaking share the same breath." },
+    { "id": "door-question", "title": "The open threshold", "priority": 68, "conditions": { "all": ["door", "question"] }, "template": "The door stands open onto no visible room. The question is no longer what is behind it, but who will cross." },
+    { "id": "earth-star", "title": "A moving home", "priority": 66, "conditions": { "all": ["earth", "star"] }, "template": "Earth circles its star, carrying oceans, forests, and every unfinished thought through the dark." },
+    { "id": "storm-not-fire", "title": "Weather without flame", "priority": 64, "conditions": { "all": ["storm"], "not": ["fire"] }, "template": "The storm gathers its force without flame. The sky can be fierce and still leave the ground untouched." },
+    { "id": "observer-sky", "title": "The act of looking", "priority": 62, "conditions": { "any": ["scientist", "astronomer", "telescope"], "all": ["star"] }, "template": "A star is already old by the time its light arrives. Still, {attributes.character} looks up and calls it present." },
+    { "id": "rain-quiet", "title": "Rain in the quiet", "priority": 60, "conditions": { "all": ["rain", "silence"] }, "template": "Rain finds its own rhythm against the quiet. Nothing speaks, and yet the room feels less empty." },
+    { "id": "moon-shadow", "title": "The borrowed shadow", "priority": 58, "conditions": { "all": ["moon", "shadow"], "not": ["lightning"] }, "template": "Moonlight gives the shadows room to stretch. By morning, they will pretend they were never there." },
+    { "id": "first-contact", "title": "A world begins", "priority": 10, "conditions": { "any": ["rain", "scientist", "midnight", "telescope", "jupiter", "question", "ocean", "forest"] }, "template": "A new detail enters {attributes.setting}. The world shifts, just enough to make room for it." }
+  ]
+}

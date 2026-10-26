@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "concepts": [
+    { "id": "rain", "name": "rain", "domain": "meteorology", "definition": "Liquid water falling from clouds.", "aliases": ["rainfall", "downpour", "shower"] },
+    { "id": "storm", "name": "storm", "domain": "meteorology", "definition": "A violent atmospheric disturbance with wind and precipitation.", "aliases": ["tempest", "thunderstorm"] },
+    { "id": "wind", "name": "wind", "domain": "meteorology", "definition": "Air moving across the surface of a world.", "aliases": ["breeze", "gale"] },
+    { "id": "cloud", "name": "cloud", "domain": "meteorology", "definition": "A visible mass of suspended droplets or ice crystals.", "aliases": ["clouds", "overcast"] },
+    { "id": "snow", "name": "snow", "domain": "meteorology", "definition": "Ice crystals gathered into flakes and falling from the sky.", "aliases": ["snowfall", "blizzard"] },
+    { "id": "lightning", "name": "lightning", "domain": "physics", "definition": "An electrical discharge through the atmosphere.", "aliases": ["lightning bolt", "electric flash"] },
+    { "id": "scientist", "name": "scientist", "domain": "people", "definition": "A person who studies the natural world through evidence.", "aliases": ["researcher", "observer", "physicist"] },
+    { "id": "astronomer", "name": "astronomer", "domain": "people", "definition": "A scientist who studies objects and events beyond Earth.", "aliases": ["stargazer", "sky watcher"] },
+    { "id": "midnight", "name": "midnight", "domain": "time", "definition": "The quiet boundary between one day and the next.", "aliases": ["12 am", "12 a m", "middle of the night"] },
+    { "id": "telescope", "name": "telescope", "domain": "astronomy", "definition": "An instrument that gathers distant light for closer study.", "aliases": ["scope", "optical telescope"] },
+    { "id": "jupiter", "name": "Jupiter", "domain": "astronomy", "definition": "The largest planet in the Solar System, known for its bands and Great Red Spot.", "aliases": ["king of planets", "jove"] },
+    { "id": "moon", "name": "moon", "domain": "astronomy", "definition": "A natural satellite whose reflected light shapes the night sky.", "aliases": ["luna", "lunar disc"] },
+    { "id": "star", "name": "star", "domain": "astronomy", "definition": "A luminous sphere of plasma held together by gravity.", "aliases": ["stars", "sun"] },
+    { "id": "earth", "name": "Earth", "domain": "astronomy", "definition": "The home world, a blue planet suspended in space.", "aliases": ["terra", "home planet"] },
+    { "id": "gravity", "name": "gravity", "domain": "physics", "definition": "The attraction between masses that shapes motion and structure.", "aliases": ["gravitation", "gravitational pull"] },
+    { "id": "light", "name": "light", "domain": "physics", "definition": "Electromagnetic radiation visible to the human eye.", "aliases": ["beam", "illumination"] },
+    { "id": "shadow", "name": "shadow", "domain": "physics", "definition": "A region where light is blocked by an object.", "aliases": ["silhouette", "shade"] },
+    { "id": "clock", "name": "clock", "domain": "objects", "definition": "An instrument that measures and displays the passage of time.", "aliases": ["timepiece", "watch"] },
+    { "id": "silence", "name": "silence", "domain": "philosophy", "definition": "The absence of sound, or a space in which meaning can gather.", "aliases": ["quiet", "stillness"] },
+    { "id": "question", "name": "question", "domain": "philosophy", "definition": "An uncertainty that invites inquiry rather than closure.", "aliases": ["mystery", "enigma"] },
+    { "id": "memory", "name": "memory", "domain": "philosophy", "definition": "The mind's imperfect archive of what has been.", "aliases": ["recollection", "remembrance"] },
+    { "id": "time", "name": "time", "domain": "philosophy", "definition": "The dimension through which change and experience unfold.", "aliases": ["duration", "passage of time"] },
+    { "id": "ocean", "name": "ocean", "domain": "places", "definition": "A vast body of salt water covering much of a world.", "aliases": ["sea", "open water"] },
+    { "id": "mountain", "name": "mountain", "domain": "places", "definition": "A high, enduring rise in the surface of a world.", "aliases": ["peak", "summit"] },
+    { "id": "forest", "name": "forest", "domain": "places", "definition": "A living landscape shaped by trees, shade, and hidden paths.", "aliases": ["woods", "woodland"] },
+    { "id": "signal", "name": "signal", "domain": "physics", "definition": "A pattern that carries information across distance.", "aliases": ["transmission", "beacon"] },
+    { "id": "fire", "name": "fire", "domain": "physics", "definition": "A rapid chemical reaction that releases heat and light.", "aliases": ["flame", "blaze"] },
+    { "id": "door", "name": "door", "domain": "objects", "definition": "A boundary that can open into another space or possibility.", "aliases": ["threshold", "gateway"] }
+  ]
+}
